@@ -1,5 +1,6 @@
 # Hidden Code Image Injector <br>
-## tools that help inject,extract,and remove executable code <br>in a image using python <br> How to use it <br>
+## tools that help inject,extract,and remove executable code <br>in a image using python <br> 
+## How to use it <br>
 ```python3 img-injector [option] <image-name> <executable code>```
 
 > inject the code in the image
