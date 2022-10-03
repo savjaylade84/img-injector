@@ -12,7 +12,6 @@
 import argparse
 import time
 
-
 parser = argparse.ArgumentParser(
 description='''python tools for injecting,extracting,and removing executable code in the image.''',
 formatter_class=argparse.RawDescriptionHelpFormatter,epilog=''' 
@@ -49,14 +48,13 @@ parser.add_argument('-v','--verbose'
                                  ,help='give more update in the process (default is in silent)'
                                  ,action='store_true'
                                  ,default=False)
-
+                                 
 parser.add_argument('-t','--transferFile',
                                  help='transfer hex from executable file to text file'
                                  ,action='store_true'
                                  ,default=False)
                         
 args = parser.parse_args()
-
 
 
 ''' 
@@ -193,7 +191,6 @@ def remove(image):
                 prompt('removing is complete.','progress-check',True)
                 prompt('process is done','progress-check',True)
                 prompt('program exiting','process',True)  
-
         except FileNotFoundError:
             prompt('Error: failed to extract code in a image',True)
     else:
